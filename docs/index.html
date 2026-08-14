@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080c11">
+  <meta name="description" content="Switch between open Chrome profile windows with a horizontal swipe over Chrome's vertical tabs.">
+  <title>ChromeRail — Switch Chrome profiles with a swipe</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="shell header-inner">
+      <a class="brand" href="#top" aria-label="ChromeRail home">ChromeRail</a>
+      <a class="github-link" href="https://github.com/vaibhavv06/ChromeRail">
+        GitHub
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M14 5h5v5M19 5l-8 8M19 13v5a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h5"/>
+        </svg>
+      </a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero shell">
+      <div class="hero-copy">
+        <h1>Switch Chrome profiles with a swipe.</h1>
+        <p class="lede">A tiny macOS companion that works only over Chrome’s vertical tabs. No rail. No Dock icon. No browser injection.</p>
+
+        <div class="hero-actions">
+          <a class="download-button" href="https://github.com/vaibhavv06/ChromeRail/releases/download/v0.3.2/ChromeRail-0.3.2-arm64.dmg">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 3v12m0 0 5-5m-5 5-5-5M5 19v2h14v-2"/>
+            </svg>
+            <span>
+              <strong>Download DMG</strong>
+              <small>v0.3.2 · Apple silicon</small>
+            </span>
+          </a>
+          <a class="source-link" href="https://github.com/vaibhavv06/ChromeRail">View source
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg>
+          </a>
+        </div>
+
+        <p class="compatibility">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4.5 6v5.5c0 4.5 3 7.7 7.5 9.5 4.5-1.8 7.5-5 7.5-9.5V6L12 3Zm-3 9 2 2 4-4"/></svg>
+          macOS 13+ · Accessibility permission required
+        </p>
+      </div>
+
+      <div class="browser-scene" aria-hidden="true">
+        <div class="browser-window browser-back">
+          <div class="window-bar">
+            <span class="window-dots"><i></i><i></i><i></i></span>
+            <span class="address-bar"></span>
+          </div>
+          <div class="window-body">
+            <div class="tab-rail">
+              <span class="profile blue">W</span><i></i>
+              <span class="profile red">G</span><i></i>
+              <span class="profile green">M</span><i></i>
+              <span class="profile amber">R</span><i></i>
+            </div>
+            <div class="page-lines"><i></i><i></i><i></i></div>
+          </div>
+        </div>
+
+        <div class="browser-window browser-front">
+          <div class="window-bar">
+            <span class="window-dots"><i></i><i></i><i></i></span>
+            <span class="address-bar"></span>
+          </div>
+          <div class="window-body">
+            <div class="tab-rail active-rail">
+              <span class="profile blue">W</span><i></i>
+              <span class="profile red">G</span><i></i>
+              <span class="profile green">M</span><i></i>
+              <span class="profile amber">R</span><i></i>
+            </div>
+            <div class="page-lines"><i></i><i></i><i></i></div>
+          </div>
+          <svg class="swipe-line" viewBox="0 0 330 46">
+            <path class="swipe-glow" d="M18 23h276"/>
+            <path class="swipe-arrow" d="M18 23h276m-15-15 15 15-15 15"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section class="proof shell" aria-label="ChromeRail safeguards">
+      <ul>
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="5" y="3" width="14" height="18" rx="2"/><circle cx="9" cy="8" r="1"/><circle cx="9" cy="12" r="1"/><circle cx="9" cy="16" r="1"/><path d="M12 8h4M12 12h4M12 16h4"/></svg>
+          <span>Only over vertical tabs</span>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3-3 3m3-3 3 3m-3-3v7m0 11 3-3m-3 3-3-3m3 3v-7"/><path d="M8 13.5V11a1.5 1.5 0 0 1 3 0v2-5a1.5 1.5 0 0 1 3 0v4.5l1-1a1.5 1.5 0 0 1 2.2 2l-2.6 4A4 4 0 0 1 11.3 19H10"/></svg>
+          <span>Vertical scrolling passes through</span>
+        </li>
+        <li>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4.5 6v5.5c0 4.5 3 7.7 7.5 9.5 4.5-1.8 7.5-5 7.5-9.5V6L12 3Zm-3 9 2 2 4-4"/></svg>
+          <span>No browsing data collected</span>
+        </li>
+      </ul>
+    </section>
+
+    <section class="install shell">
+      <h2>Three steps.<br> Then it disappears.</h2>
+      <ol>
+        <li><span>1</span><p>Download the DMG</p></li>
+        <li><span>2</span><p>Drag ChromeRail to Applications</p></li>
+        <li><span>3</span><p>Grant Accessibility once</p></li>
+      </ol>
+      <p class="gatekeeper-note">Alpha build: macOS may ask you to confirm opening ChromeRail in Privacy &amp; Security.</p>
+    </section>
+  </main>
+
+  <footer class="shell">
+    <a href="https://github.com/vaibhavv06/ChromeRail">Source on GitHub
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 5h5v5M19 5l-8 8M19 13v5a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h5"/></svg>
+    </a>
+  </footer>
+</body>
+</html>
